@@ -42,6 +42,7 @@
 .tickerPrompt {
     color: red;
     text-wrap: nowrap;
+    white-space: nowrap;
     text-align: center;
     display: flex;
     align-items: center;
