@@ -1,0 +1,54 @@
+@keyframes marquee{
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+}
+
+.tickerText h2 {
+    animation: marquee 40s steps(500,start) infinite;
+    text-transform: uppercase;
+    /* overflow:visible; */
+    white-space:nowrap;
+    font-size: 1.2em;
+}
+
+.WarRoomTicker {
+    display: flex;
+    position: fixed;
+    bottom: 50px;
+    background-image: repeating-linear-gradient(0deg,rgba(0,0,0,.55),rgba(0,0,0,.55) 1px,transparent 0,transparent 1px);
+    /* background-image: repeating-linear-gradient(0deg,rgba(0,0,0,.15),rgba(0,0,0,.15) 1px,transparent 0,transparent 2px); */
+    /* background-color: black; */
+    /* opacity: 0.99; */
+}
+
+.tickerText h2 span {
+    margin: 0 35px;
+}
+
+.tickerText {
+    width: auto;
+    /* border-width: 5px; */
+    /* border-style: solid; */
+    /* border-color: red; */
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    color: rgb(206, 206, 206);
+}
+
+.tickerPrompt {
+    color: red;
+    text-wrap: nowrap;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0 2px 0 10px;
+    font-size: 1.2em;
+/* border-style: solid; */
+/* border-color: red; */
+/* border-width: 5px; */
+
+}
